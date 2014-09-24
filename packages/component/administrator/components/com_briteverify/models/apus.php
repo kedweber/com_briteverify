@@ -8,7 +8,7 @@
 
 defined('KOOWA') or die('Restricted Access');
 
-class ComBriteverifyModelDefault extends KModelAbstract
+class ComBriteverifyModelApi extends KModelAbstract
 {
     protected function _getParams()
     {
