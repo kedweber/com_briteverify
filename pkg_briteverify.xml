@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<extension type="package" version="1.6">
+    <name>BriteVerify</name>
+    <author>Joep van der Heijden</author>
+    <creationDate>September 2014</creationDate>
+    <packagename>BriteVerify</packagename>
+    <version>1.0.0</version>
+    <url>http://www.moyoweb.nl/</url>
+    <packager>Joep van der Heijden</packager>
+    <packagerurl>http://www.moyoweb.nl/</packagerurl>
+    <description>BriteVerify Package.</description>
+    <files folder="packages">
+        <file type="component" id="briteverify">component</file>
+    </files>
+</extension>

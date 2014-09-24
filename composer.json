@@ -1,0 +1,16 @@
+{
+    "name": "cta/BriteVerify",
+    "type": "joomlatools-installer",
+    "description": "BriteVerify Package.",
+    "keywords": ["joomla", "nooku", "BriteVerify"],
+    "authors": [
+        {
+            "name": "Joep van der Heijden",
+            "email": "joep.van.der.heijden@moyoweb.nl",
+            "homepage": "http://www.moyoweb.nl"
+        }
+    ],
+    "require": {
+        "joomlatools/installer": "*"
+    }
+}
