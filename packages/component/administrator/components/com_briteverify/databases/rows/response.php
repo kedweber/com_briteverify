@@ -25,7 +25,7 @@ class ComBriteverifyDatabaseRowResponse extends KDatabaseRowAbstract
             return true;
         }
 
-        if ($this->status =- 'accept_all') {
+        if ($this->status == 'accept_all') {
             return true;
         }
     }
