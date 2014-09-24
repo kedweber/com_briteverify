@@ -10,5 +10,5 @@ CREATE TABLE IF NOT EXISTS `#__briteverify_accounts` (
   `modified_on` datetime DEFAULT NULL,
   `locked_on` datetime NOT NULL DEFAULT '0000-00-00 00:00:00',
   `locked_by` int(11) NOT NULL DEFAULT '0',
-  PRIMARY KEY (`cloudinary_account_id`)
+  PRIMARY KEY (`briteverify_account_id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
