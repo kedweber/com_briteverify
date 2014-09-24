@@ -21,13 +21,11 @@ defined('KOOWA') or die('Protected Resource'); ?>
 				<?= $account->title; ?>
 			</a>
 		</td>
-		<td>
-			<?php if ( $account->default == 1 ) : ?>
-                <i class="icon-star" title="<?= JText::_( 'Default' ); ?>"></i>
-			<?php else : ?>
-				&nbsp;
-			<?php endif; ?>
-		</td>
+        <td>
+            <?= @helper('com://admin/moyo.template.helper.grid.defaultable', array(
+                'row' => $account
+            )); ?>
+        </td>
 	</tr>
 <? endforeach ?>
 

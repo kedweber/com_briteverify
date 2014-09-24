@@ -8,11 +8,12 @@
 
 defined('KOOWA') or die('Restricted Access');
 
-class ComBriteverifyModelApi extends KModelAbstract
+class ComBriteverifyModelApus extends KModelAbstract
 {
-    protected function _getParams()
+    protected function _buildQuery()
     {
-        return array();
+        $account = $this->_getAccount();
+        return array('apikey' => $account->api_key);
     }
 
     protected function _getUrl()
@@ -25,7 +26,7 @@ class ComBriteverifyModelApi extends KModelAbstract
         $state = $this->_state;
 
         // Get default API key if not defined in state
-        if (!$state->id) {
+        if ($state->id) {
             $account = $this->getService('com://admin/briteverify.model.accounts')->id($state->id)->getItem();
         } else {
             $account = $this->getService('com://admin/briteverify.model.accounts')->default(1)->getItem();
@@ -54,9 +55,7 @@ class ComBriteverifyModelApi extends KModelAbstract
     public function getItem()
     {
         $url = $this->_getUrl();
-        $account = $this->_getAccount();
         $params = $this->_buildQuery();
-        $params['apikey'] = $account->api_key;
 
         $response = $this->_doCurl($url, $params);
 

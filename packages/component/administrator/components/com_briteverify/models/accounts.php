@@ -10,12 +10,12 @@
 
 defined('KOOWA') or die('Restricted Access');
 
-class ComBriteverifyControllerToolbarAccounts extends ComDefaultControllerToolbarDefault
+class ComBriteverifyModelAccounts extends ComDefaultModelDefault
 {
-	public function getCommands()
+	public function __construct(KConfig $config)
 	{
-		$this->addCommand('default');
+		parent::__construct($config);
 
-		return parent::getCommands();
+		$this->getState()->insert('default', 'int', null, true);
 	}
 }
