@@ -30,7 +30,7 @@
             <folder>views</folder>
         </files>
 
-        <languages folder="administrator/components/com_articles">
+        <languages folder="administrator/components/com_briteverify">
             <language tag="en-GB">language/en-GB/en-GB.com_briteverify.ini</language>
             <language tag="en-GB">language/en-GB/en-GB.com_briteverify.sys.ini</language>
             <language tag="fr-FR">language/fr-FR/fr-FR.com_briteverify.ini</language>
