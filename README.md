@@ -22,22 +22,33 @@ BriteVerify Component was developed by [Moyo Web Architects](http://moyoweb.nl).
 Installation is done through composer. In your `composer.json` file, you should add the following lines to the repositories
 section:
 
+For this local repository:
+
 ```json
 {
-    "name": "cta/BriteVerify",
+    "name": "moyo/BriteVerify",
     "type": "joomlatools-installer",
-    "url": "https://github.com/cta-int/briteverify.git"
+    "url": "https://github.com/kedweber/com_briteverify.git"
+}
+```
+
+and for the future resting place:
+
+```json
+{
+    "name": "moyo/BriteVerify",
+    "type": "joomlatools-installer",
+    "url": "https://github.com/moyoweb/com_briteverify.git"
 }
 ```
 
 The require section should contain the following line:
 
 ```json
-    "cta/briteverify": "1.0.*",
+    "moyo/com_briteverify": "1.0.*",
 ```
 
-
-Afterward, just run `composer update` from the root of your Joomla project.
+Afterwards, just run `composer update` from the root of your Joomla project.
 
 ### jsymlinker
 
