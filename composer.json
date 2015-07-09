@@ -1,7 +1,8 @@
 {
-    "name": "cta/BriteVerify",
+    "name": "moyo/com_briteverify",
     "type": "joomlatools-installer",
     "description": "BriteVerify Package.",
+    "homepage": "http://github.com/kedweber/com_briteverify",
     "keywords": ["joomla", "nooku", "BriteVerify"],
     "authors": [
         {
